@@ -1,0 +1,197 @@
+@import url('http://fonts.cdnfonts.com/css/a-astro-space');
+@import url('http://fonts.cdnfonts.com/css/himagsikan');
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+/*this is for the header */
+
+
+  
+  nav ul li a {
+    
+       
+        font-family: 'a Astro Space', sans-serif;
+        font-size: 17PX;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        padding: 9px 13px;
+        border-radius: 3px;
+        /* background-color: #4ecaf987; */
+  }
+
+  nav{
+    background: rgb(78,184,224);
+    background: linear-gradient(126deg, rgba(78,184,224,1) 0%, rgba(78,184,224,0) 100%);
+    height: 80PX;
+    width: 100%;
+    PADDING-RIGHT: 30PX;
+    
+}
+NAV ul{
+    float: right;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+
+
+}
+
+a:hover{
+background-color: rgb(22, 146, 230);
+
+}
+i{
+    color: white;
+}
+/* FOR THE BAR BUTTON OF NAV  */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952PX) {
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 914PX) {
+   .checkbtn{
+        display: block ;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:  #90d0e8;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50PX 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover{
+        background:  none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    
+   
+}
+/* image of the nav */
+IMG[src="logo.png"]{
+    HEIGHT: 85PX;
+    width: 300PX;
+}
+
+.word_on_navimg{
+    position: relative;
+    font-family: 'Himagsikan', sans-serif;
+    
+    word-spacing: 7px;
+    letter-spacing: 6px;
+    COLOR: rgb(14, 124, 197);
+    TEXT-ALIGN: center;
+    width: 100%;
+    HEIGHT: 900PX;
+    LINE-HEIGHT: 200PX;
+    padding: 430PX  0 100PX 0;
+
+    
+    background-image: url('navimg.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3f50d4;
+    background-position: center center;
+    z-index: 0;
+    /* background-size: 100% 900PX; */
+}
+header{
+    position: absolute;
+    width: 100%;
+    Z-INDEX: 2;
+}
+h1{
+    BACKGROUND-COLOR: #ffffff54;
+    COLOR: white;
+    FONT-SIZE: 3.4VW;
+}
+
+/* for the contuct us list drop */
+.cont_drop{
+  visibility: hidden;
+    position: absolute;
+    top: 100%;
+    
+
+
+}
+
+.dropdown:hover > ul ,
+.cont_drop:hover {
+  visibility: visible;
+  opacity: 1;
+  
+  
+}
+
+.cont_drop li{
+    display: block;
+}
+
+@media (max-width: 914PX) {
+.cont_drop{
+    
+      
+      top: 340PX;
+      LEFT: 0PX;
+      transition: none;
+  
+  }
+  
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    BOTTOM: 52.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*to center the element veticaly*/
+    width: 230PX;
+    HEIGHT: 30PX;
+    CURSOR: POINTER;
+}
+IMG[src="logo.png"] {
+    HEIGHT: 80PX;
+    width: 200PX;
+}
+
+}
+

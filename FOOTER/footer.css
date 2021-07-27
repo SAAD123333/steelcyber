@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "footer_font";
+  src: url('font/Arista2.0 light.ttf');
+}
+
+footer{
+padding: 4em 0;
+padding-bottom: 9em;
+background-color: rgb(63, 63, 63);
+margin-top: 70PX;
+background-image: linear-gradient(
+  45deg
+  , #001413, #001b2e);
+}
+/*this is what will contain the elemen ts and where we will define the padding and marging left and right*/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .elements{
+      display: flex;
+      flex-wrap: nowrap!important;
+    }
+    .container {
+      max-width: 720px;
+    }/*if not the elment 1 2 3 will take 100%*/
+    .element1{
+        max-width:40.33333%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .element2{
+        max-width: 38%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: 0px;
+      }
+      .element3{
+        max-width: 21.66666%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1150px;
+    }
+  }
+  .elements{
+      display: flex;
+      flex-wrap: wrap;
+      /* margin-right: -15px;
+      margin-left: -15px; */
+  }
+  .element1,.element2,.element3{
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 3rem !important;
+    font-family: "footer_font",Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   line-height: 25PX;
+   font-size: 16PX;
+  }
+  
+  .h1_footer{
+      background: none;
+      font-size: 1.1rem;
+      font-family: 'Courier New', Courier, monospace;
+    /* letter-spacing: 0.1em; */
+    font-weight: bold;
+    color: #fff;
+    /* text-align: center; */
+  }
+
+  .element1 p{
+    font-family: "footer_font",Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   line-height: 25PX;
+  }
+  .email{
+   /*  font-size: 20PX; */
+    line-height: normal;
+    
+  }
+  .element2 li{
+    margin-bottom: 15PX;
+  }
+.element2{
+  margin-left: 50PX;
+}
+.element1{
+  padding-left: 0px;
+  margin-left: -30px;
+}
+ .element3{
+  margin-left: 20px;
+}
+@media (max-width: 914px){
+.footer_ul {
+  position: unset;
+  text-align: unset;
+  height: 10vh;
+    width: 100%;
+  
+    background: none;
+    top: 0;
+    left: 0;
+    text-align: none;
+    transition: none;
+}
+.element2{
+  margin-left: 0PX;
+}
+.element3{
+  margin-left: 0px;
+}
+.element1{
+  margin-left: 0px;
+}
+}
+
+.icon{
+  margin-left: 10PX;
+  color: #fff;
+}
+.lien_social_footer:hover{
+text-decoration: none;
+}
+.COP_NAME
+{
+  text-decoration: none;
+  color: #fff;
+}
+.para_cop{
+  
+  text-align: center;
+  color: #fff;
+}
+.copyright{
+  margin-top: 40px;
+}
