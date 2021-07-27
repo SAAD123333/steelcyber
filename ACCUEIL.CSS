@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "section_font";
+    src: url('font/Arista2.0 light.ttf');
+}
+/*the container cases to define the width */
+
+.container_about_us {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40PX;
+  }
+  @media (min-width: 576px) {
+    .container_about_us {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container_about_us {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container_about_us {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container_about_us {
+      max-width: 1140px;
+    }
+  }
+  
+
+
+
+
+/*the_content_about_us_flex*/
+.the_content_about_us_flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+}
+
+
+
+ 
+
+
+/*title about us */
+.about_us_title{
+            margin-top: 80PX;
+            padding: 20PX;
+            text-align: center;
+            font-family: 'Himagsikan', sans-serif;
+            color: rgb(220, 235, 248);
+            background-image: url("background_section.jpg");
+            letter-spacing: 2PX;
+            word-spacing: 3px;
+            line-height: 5vw;
+            font-size: 4vw;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+           }
+        /*******************************************/
+        
+.text_content_about_us{   
+                max-width: 41.66667%;
+                
+                font-weight: 400;
+    font-size: 0.97rem;
+    line-height: 1.8;
+                
+                border-radius: 40PX;
+                padding: 60PX;
+                color: white;
+                background-image: url("background_section.jpg");
+                
+                
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+
+}
+.text_content_about_us::before{
+    background-color: rgb(209, 231, 250);
+
+}
+
+.text_content_about_us
+{
+
+font-family: "section_font";
+letter-spacing: 4PX;
+
+}
+/* 
+@media (max-width:913px) {
+    .container_about_us {
+        MARGIN: 100PX;
+        flex-direction: column;
+        WIDTH: 150%;
+    }
+} */
+

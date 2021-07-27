@@ -1,0 +1,73 @@
+.evenements{
+    padding: 4em 0;
+      /*   padding-bottom: 9em;*/ 
+    background-color: rgb(63, 63, 63);
+    margin-top: 70PX;
+    background-image: linear-gradient(
+      45deg
+      , #001413, #001b2e);
+    }
+  
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-bottom: 0px;
+    }
+
+.container_evenements{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container_evenements {
+      max-width: 540px;
+    }
+    .row{
+  
+      margin-bottom: 30px;
+    }
+
+  }
+  @media (min-width: 768px) {
+    
+    .container_evenements {
+      max-width: 720px;
+    }
+    .row{
+  
+      margin-bottom: 30px;
+    }
+
+  }
+  @media (min-width: 992px) {
+    .container_evenements {
+      max-width: 960px;
+    }
+    .row{
+  
+      margin-bottom: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container_evenements {
+      max-width: 1150px;
+    }
+    .row{
+  
+      margin-bottom: 30px;
+    }
+  }
+
+  .evenements_real_container{
+    display: flex; /* how to have the responsive in the real container is with two attribute */
+    flex-wrap: wrap;
+}
+
+.events{
+    width: 100%;
+    max-width: 100%;
+}

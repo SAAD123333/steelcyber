@@ -1,0 +1,47 @@
+.card{
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+margin: 20px auto;
+}
+
+.the_img{
+    height: 180px;
+width: 100%;
+display: block;
+}
+.card_content{
+    flex: 1 1 auto;
+padding: 1.25rem;
+}
+.title_content{
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+.centent_card{
+    margin-top: 0;
+margin-bottom: 1rem;
+}
+.btn_redirection{
+    cursor: pointer;
+    color: #fff;
+background-color: #7b8688;
+
+display: inline-block;
+border: 1px solid transparent;
+
+padding: .375rem .75rem;
+border-radius: .25rem;
+}
+a{
+    text-decoration: none;
+}
+

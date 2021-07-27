@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "footer_font";
+    src: url('font/Arista2.0 light.ttf');
+  }
+/* pa-grand-pa */
+  .contact{
+  padding: 4em 0;
+    /*   padding-bottom: 9em;*/ 
+  background-color: rgb(63, 63, 63);
+  margin-top: 70PX;
+  background-image: linear-gradient(
+    45deg
+    , #001413, #001b2e);
+  }
+
+
+/* *************************************grand-pa */
+.container_contact {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container_contact {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    
+    .container_contact {
+      max-width: 720px;
+    }
+
+  }
+  @media (min-width: 992px) {
+    .container_contact {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container_contact {
+      max-width: 1150px;
+    }
+  }
+
+/*padrer*/
+.the_form_container{
+    display: flex; /* how to have the responsive in the real container is with two attribute */
+    flex-wrap: wrap;
+}
+
+/* ourform */
+.to_give_form_themaxsize{
+    width: 100%;
+    max-width: 100%;
+}
+
+/* chidren1 */
+
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+/*children of 1*/
+@media (min-width: 768px){
+.person,.association{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+  .person,.association,.services,.email{
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0px 10PX;
+  }
+/* at the bigining we will have the association hiding
+ */
+ .association{
+   display: none;
+ }
+  label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    color: #fff;
+
+  }
+
+  .imput_style,.select{
+    box-shadow: none !important;
+    height: 50px;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 5PX;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  /*the select is the dropdown list */
+.select{
+margin-bottom: 10px;
+
+}
+.just_for_padding{
+  padding: 0px 10PX;
+  margin-bottom: 18PX;
+}
+
+
+
+/*for the service where we will talk about the problem*/
+.textarea_contact{
+  box-shadow: none !important;
+  
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 5PX;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.course{
+display: block;
+}
+.services{
+display: none;
+}
+
+.email{
+  margin-top: 20PX;
+}
+
+.submition_buttion{
+  height: 50px;
+  margin: 10px;
+  width: 20%;
+}
+.sub{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
